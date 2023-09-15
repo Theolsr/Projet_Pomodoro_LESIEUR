@@ -1,22 +1,12 @@
-let minutesTravail=25;
-let minutesPause = 5;
-let secondes=0;
+let tempsTravail = 1500;
+let tempsPause = 300;
+let tempsPauseProlongee = 1500;
 
-function CompteARebours() {
-    while(minutesTravail >= 1 && secondes >= 0) {
-        secondes = 59;
-        console.log(secondes)
-        for(let i = secondes; i > 0; i--) {
-            secondes = secondes - 1;
-            console.log("Secondes :" + secondes);
-        if(secondes == 0) {
-            minutesTravail = minutesTravail -1;
-            console.log("Minutes :" + minutesTravail);
-            secondes = 59;
-            }
-        
-        }
+let chronometre = document.getElementById("chronometre").textContent = tempsTravail
 
-    }
+function comteARebours() {
+    chronometre.innerText = tempsTravail
+    tempsTravail--
+    console.log(tempsTravail, chronometre)
 }
-CompteARebours()
+setInterval(comteARebours(),1000)
