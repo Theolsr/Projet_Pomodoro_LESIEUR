@@ -13,6 +13,14 @@ function compteARebours() {
 
     chronometre.innerText = minutes + ":" + secondes
     tempsTravail = tempsTravail - 1
-    
 }
 
+let boutonDemmarrer = document.getElementById("demarrer")
+boutonDemmarrer.addEventListener('click', () => {
+    setInterval(compteARebours(),1000)
+})
+
+let boutonRecommencer = document.getElementById("recommencer")
+boutonRecommencer.addEventListener('click', () => {
+    location.reload();
+})
