@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style rel="style" href="\Projet_Pomodoro_LESIEUR\css\style.css"></style>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Chronomètre Pomodoro</title>
 </head>
 <body>
     <header>
         <h1>Chronomètre Pomodoro</h1>
     </header>
-    <div class="phase">
+    <section>
         <h3>Phase actuelle :</h3>
-        <p id="travail">Travail</p>
-        <p id="pause">Pause</p>
-    </div>
+        <div class="phase">           
+            <p id="travail">Travail</p>
+            <p id="pause">Pause</p>
+        </div>
+    </section>
     <div>
         <h3>Temps Restant :</h3>
         <p id="chronometre">25:00</p>
     </div>
-    <div class="commandes">
-        <button id="demarrer">Démarrer</button>
-        <button id="recommencer">Recommencer</button>
-    </div>
-    <footer>Site réalisé par LESIEUR Théo / TD2 / TP2.1</footer>
-    <script src="\js\app.js"></script>
+    <section class="commandes">
+        <div>
+            <button id="demarrer">Démarrer</button>
+            <button id="recommencer">Recommencer</button>
+        </div>
+    </section>
+    
+    <script src="/js/app.js"></script>
 </body>
 </html>

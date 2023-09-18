@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(111, 170, 215);
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.phase {
+    color: rgb(0, 44, 238);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;    
+}
+
+#travail{
+    color : rgb(11, 0, 172);
+}
+
+#pause {
+    color : rgb(11, 0, 172);
+}
+
+#chronometre {
+    color: rgb(11, 0, 172);
+}
+
+
+
+
+
+.commandes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
