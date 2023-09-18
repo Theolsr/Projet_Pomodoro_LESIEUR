@@ -6,6 +6,6 @@
 - Chronomètre Pomodoro : On peut démarrer le cycle de Pomodoro et le réinitialiser
 
 ## Utilisation
-1 : Cloner le dépôt sur votre ordinateur
-2 : Chargez le fichier "index.html" sur votre navigateur
-3 : Cliquez sur le bouton "Démarrer"
+- 1 : Cloner le dépôt sur votre ordinateur
+- 2 : Chargez le fichier "index.html" sur votre navigateur
+- 3 : Cliquez sur le bouton "Démarrer"
