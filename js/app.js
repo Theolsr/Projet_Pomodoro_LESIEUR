@@ -1,3 +1,4 @@
+// Déclaration des variables
 let tempsTravail = 1500;
 let tempsPause = 300;
 let tempsPauseProlongee = 1500;
@@ -7,6 +8,7 @@ let phasePause = document.getElementById("pause")
 let phase = 1;
 let tempsPhase = 0;
 
+// Fonction de changement de phase travail/pause
 function gererPhase () {
     if(phase % 2 == 1) {
         phaseTravail.style.display = "block"
@@ -17,6 +19,7 @@ function gererPhase () {
     }
 }
 
+// Fonction de changement de temps de phase travail/pause
 function gererTempsPhase () {
     if(phase % 2 == 1) {
         tempsPhase = tempsTravail
@@ -25,6 +28,7 @@ function gererTempsPhase () {
     }
 }
 
+// Fonction de décompte
 function compteARebours() {
     gererPhase()
     let minutes = parseInt(tempsPhase / 60,10)
@@ -39,6 +43,7 @@ function compteARebours() {
     }  
 }
 
+// Déclaration et ajout de la fonction du bouton "Démarrer"
 let boutonDemmarrer = document.getElementById("demarrer")
 boutonDemmarrer.addEventListener('click', () => {
     gererTempsPhase()
@@ -47,6 +52,7 @@ boutonDemmarrer.addEventListener('click', () => {
     setInterval(compteARebours,1000)
 })
 
+// Déclaration et ajout de la fonction du bouton "Recommencer"
 let boutonRecommencer = document.getElementById("recommencer")
 boutonRecommencer.style.display="none"
 boutonRecommencer.addEventListener('click', () => {
