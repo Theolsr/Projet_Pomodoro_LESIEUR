@@ -9,3 +9,6 @@
 - 1 : Cloner le dépôt sur votre ordinateur
 - 2 : Chargez le fichier "index.html" sur votre navigateur
 - 3 : Cliquez sur le bouton "Démarrer"
+
+## Auteur
+- Elaboré et Réalisé par LESIEUR Théo
